@@ -20,7 +20,7 @@ class EmojiMemoryGame {
         let randomNumber = Int.random(in: 2...emojis.count)
         
         emojis.removeSubrange(randomNumber..<emojis.count)
-        print("size of emojis array \(emojis.count)")
+        
         return MemoryGame<String>(numberOfPairsOfCard: emojis.count) { pairIndex in
             return emojis[pairIndex]
             

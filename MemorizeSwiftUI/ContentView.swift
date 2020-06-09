@@ -15,17 +15,31 @@ struct ContentView: View {
     var viewModel: EmojiMemoryGame
     
     var body: some View {
+        
         HStack {
-            ForEach(viewModel.cards) { card in
-                CardView(card:card).onTapGesture
-                    {
-                        self.viewModel.chooseCard(card: card)
+            // MARK: - font will adjust in the 5 pair case (only) to use a smaller font than .largeTitle.
+            if (viewModel.cards.count == 10) {
+                ForEach(viewModel.cards) { card in
+                
+                    CardView(card:card).onTapGesture
+                        {
+                            self.viewModel.chooseCard(card: card)
+                    }.font(Font.body)
+                }
+            }
+            else {
+                ForEach(viewModel.cards) { card in
+                
+                    CardView(card:card).onTapGesture
+                        {
+                            self.viewModel.chooseCard(card: card)
+                    }.font(Font.largeTitle)
                 }
             }
         }
         .padding()
         .foregroundColor(Color.orange)
-        .font(Font.largeTitle)
+        
     }
 }
 
