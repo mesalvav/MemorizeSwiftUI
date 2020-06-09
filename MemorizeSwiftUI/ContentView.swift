@@ -43,7 +43,8 @@ struct CardView: View {
                 RoundedRectangle(cornerRadius: 10.0).fill()
             }
             
-        }
+        }.aspectRatio(2/3, contentMode: ContentMode.fit)
+        // MARK: - Aspect ratio of the cards 2 to 3
     }
 }
 
