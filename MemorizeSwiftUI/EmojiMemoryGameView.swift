@@ -6,7 +6,7 @@
 //  Copyright © 2020 mariosalvatierra. All rights reserved.
 //
 // https://www.youtube.com/watch?v=jbtqIBpUG7g&list=PLpGHT1n4-mAtTj9oywMWoBx0dCGd51_yG&index=5
-//
+// https://cs193p.sites.stanford.edu
 import SwiftUI
 
 struct EmojiMemoryGameView: View {
@@ -15,15 +15,13 @@ struct EmojiMemoryGameView: View {
     
     var body: some View {
        
-        HStack {
-            ForEach(viewModel.cards) { card in
-                CardView(card:card).onTapGesture
-                    {
+        Grid(viewModel.cards) { card in
+                CardView(card:card).onTapGesture {
                         self.viewModel.choose(card: card)
                 }
+                .padding(5)
             }
-        }
-        .padding(10)
+        .padding()
         .foregroundColor(Color.orange)
         
     }
@@ -46,7 +44,10 @@ struct CardView: View {
                RoundedRectangle(cornerRadius: cornerRadious).stroke(lineWidth:edgeLineWidth)
                Text(card.content)
            } else {
-               RoundedRectangle(cornerRadius: self.cornerRadious).fill()
+            if !card.isMatched {
+                RoundedRectangle(cornerRadius: cornerRadious).fill()
+            }
+               
            }
            
        }
