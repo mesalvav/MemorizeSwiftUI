@@ -19,6 +19,8 @@
 		AB4A6671248D2DCD0072AB10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4A666F248D2DCD0072AB10 /* LaunchScreen.storyboard */; };
 		AB4A667B248D55F20072AB10 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A667A248D55F20072AB10 /* MemoryGame.swift */; };
 		AB4A667D248D58D30072AB10 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A667C248D58D30072AB10 /* EmojiMemoryGame.swift */; };
+		ABFF784824954D5300DD894B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF784724954D5300DD894B /* Theme.swift */; };
+		ABFF784A249568A300DD894B /* HarcodedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF7849249568A300DD894B /* HarcodedTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		AB4A6672248D2DCD0072AB10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4A667A248D55F20072AB10 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		AB4A667C248D58D30072AB10 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
+		ABFF784724954D5300DD894B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		ABFF7849249568A300DD894B /* HarcodedTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarcodedTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				AB4A667A248D55F20072AB10 /* MemoryGame.swift */,
 				AB365E26249189140072B88D /* Array+Only.swift */,
 				AB4A667C248D58D30072AB10 /* EmojiMemoryGame.swift */,
+				ABFF784724954D5300DD894B /* Theme.swift */,
+				ABFF7849249568A300DD894B /* HarcodedTheme.swift */,
 			);
 			path = MemorizeSwiftUI;
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 				AB4A6669248D2DCB0072AB10 /* EmojiMemoryGameView.swift in Sources */,
 				AB4A667D248D58D30072AB10 /* EmojiMemoryGame.swift in Sources */,
 				AB365E25249128F40072B88D /* Array+Identifiable.swift in Sources */,
+				ABFF784824954D5300DD894B /* Theme.swift in Sources */,
 				AB365E23249114BE0072B88D /* GridLayout.swift in Sources */,
+				ABFF784A249568A300DD894B /* HarcodedTheme.swift in Sources */,
 				AB0F932124902381004743B6 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
