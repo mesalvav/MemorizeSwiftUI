@@ -48,6 +48,13 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
             cards.append(Card(content: content, id: pairIndex*2))
              cards.append(Card(content: content, id: pairIndex*2+1))
         }
+        // MARK: - Shuffled the cards
+        for _ in 0..<cards.count {
+            let randomNumber = Int.random(in: 0..<cards.count)
+            let randomCardRemoved = cards.remove(at: randomNumber)
+            // print(randomCardRemoved)
+            cards.append(randomCardRemoved)
+        }
     }
     
     struct Card: Identifiable {
