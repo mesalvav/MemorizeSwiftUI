@@ -19,9 +19,9 @@ struct HardcodedTheme {
         
         "Animals":HardData(name: "Animals", emojisArray: ["🐁","🦨","🦜","🦞","🦧"], colorTheme: Color.pink, isTheNumberOfCardToshowRandom: false),
         
-        "Hands":HardData(name: "Shoes", emojisArray: ["🤏🏻","🤙🏿","✍️","☝🏽","🖐🏻"], colorTheme: Color.blue, isTheNumberOfCardToshowRandom: false),
+        "Hands":HardData(name: "Hands", emojisArray: ["🤏🏻","🤙🏿","✍️","☝🏽","🖐🏻"], colorTheme: Color.blue, isTheNumberOfCardToshowRandom: false),
         
-        "Clouds":HardData(name: "Shoes", emojisArray: ["⛅️","🌧","🌁","🌩","💨"], colorTheme: Color.yellow, isTheNumberOfCardToshowRandom: false)
+        "Clouds":HardData(name: "Clouds", emojisArray: ["⛅️","🌧","🌁","🌩","💨"], colorTheme: Color.yellow, isTheNumberOfCardToshowRandom: false)
         
     ]
     

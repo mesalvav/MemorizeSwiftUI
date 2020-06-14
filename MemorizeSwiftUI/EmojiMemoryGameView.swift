@@ -14,15 +14,47 @@ struct EmojiMemoryGameView: View {
     @ObservedObject var viewModel: EmojiMemoryGame
     
     var body: some View {
-       
-        Grid(viewModel.cards) { card in
-                CardView(card:card).onTapGesture {
-                        self.viewModel.choose(card: card)
-                }
-                .padding(5)
+        
+        VStack {
+            
+                Grid(viewModel.cards) { card in
+                          CardView(card:card).onTapGesture {
+                                  self.viewModel.choose(card: card)
+                          }
+                          .padding(5)
+                      }
+                   .padding(3)
+                   .foregroundColor(viewModel.nuevotema.harco.colorTheme)
+                               
+               HStack {
+                   Button(action: {
+                                   
+                               }) {
+                               Text("Playing Theme: \(viewModel.nuevotema.harco.name)")
+                               }
+                               .font(.caption)
+                               .padding()
+                               .background(Color.gray)
+                               .foregroundColor(.black)
+                   
+                   Button(action: {
+                               // print("clicked button")
+                               self.viewModel.newGame()
+                           }) {
+                           Text("New Game")
+                           }
+                           .font(.caption)
+                           .padding()
+                           .background(Color.gray)
+                           .foregroundColor(.black)
+                   
+               } // end of hstack
             }
-        .padding()
-        .foregroundColor(viewModel.tema.harco.colorTheme)
+            
+           
+        
+        
+        
     }
 }
 

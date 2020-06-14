@@ -21,7 +21,7 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
     }
     
    mutating func choose(card: Card){
-        print("card choosen \(card)")
+       // print("card choosen \(card)")
     
     if let chosenIndex = cards.firstIndex(matching: card), !cards[chosenIndex].isFaceUp, !cards[chosenIndex].isMatched {
         if let potentialMatchIndex = indexOfTheOneAndOnlyOneFaceUpCard {
