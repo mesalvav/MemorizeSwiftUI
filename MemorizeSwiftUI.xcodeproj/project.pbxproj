@@ -20,6 +20,7 @@
 		AB4A667B248D55F20072AB10 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A667A248D55F20072AB10 /* MemoryGame.swift */; };
 		AB4A667D248D58D30072AB10 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A667C248D58D30072AB10 /* EmojiMemoryGame.swift */; };
 		AB5E527824967C53003C74EB /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E527724967C53003C74EB /* Pie.swift */; };
+		ABF4E2362496979C001EFF87 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4E2352496979C001EFF87 /* Cardify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		AB4A667A248D55F20072AB10 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		AB4A667C248D58D30072AB10 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		AB5E527724967C53003C74EB /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		ABF4E2352496979C001EFF87 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				AB4A6664248D2DCB0072AB10 /* AppDelegate.swift */,
 				AB4A6666248D2DCB0072AB10 /* SceneDelegate.swift */,
 				AB4A6668248D2DCB0072AB10 /* EmojiMemoryGameView.swift */,
+				ABF4E2352496979C001EFF87 /* Cardify.swift */,
 				AB5E527724967C53003C74EB /* Pie.swift */,
 				AB0F932024902381004743B6 /* Grid.swift */,
 				AB365E24249128F40072B88D /* Array+Identifiable.swift */,
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF4E2362496979C001EFF87 /* Cardify.swift in Sources */,
 				AB5E527824967C53003C74EB /* Pie.swift in Sources */,
 				AB4A6665248D2DCB0072AB10 /* AppDelegate.swift in Sources */,
 				AB4A6667248D2DCB0072AB10 /* SceneDelegate.swift in Sources */,
