@@ -27,6 +27,15 @@ struct EmojiMemoryGameView: View {
                    .foregroundColor(viewModel.nuevotema.harco.colorTheme)
                                
                HStack {
+                Button(action: {
+                    
+                }) {
+                    Text("Score: \(viewModel.score)")
+                }
+                .font(.caption)
+                .padding()
+                .background(Color.gray)
+                .foregroundColor(.black)
                    Button(action: {
                                    
                                }) {
